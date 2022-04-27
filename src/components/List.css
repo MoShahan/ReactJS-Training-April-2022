@@ -1,0 +1,68 @@
+table {
+    border-collapse: collapse;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+tr {
+    display: flex;
+}
+
+table a {
+    text-decoration: underline;
+    color: white;
+}
+
+table a:hover {
+    color: rgb(152, 214, 235);
+}
+
+th {
+    background-color: var(--indigo);
+    color: var(--backgroundColor);
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: 1;
+}
+
+th:nth-child(2),
+.itemUrl {
+    flex: 2;
+    flex-flow: row wrap;
+}
+
+tr:nth-child(even) {
+    background-color: var(--foregroundColor);
+}
+
+.actionHead {
+    text-align: center;
+}
+
+.deleteOption {
+    cursor: pointer;
+    text-align: center;
+}
+
+.deleteOption:hover {
+    background-color: rgb(214, 101, 101);
+    border-radius: 14px;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.table-headings {
+    cursor: pointer;
+}
+
+.arrow-icon {
+    color: aliceblue;
+    padding-left: 40px;
+}
